@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Naive",
+            "skipFiles": ["<node_internals>/**"],
+            "runtimeExecutable": "node",
+            "console": "integratedTerminal",
+            "args": ["real.js"],
+            "outFiles": ["${workspaceFolder}/**/*.js"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Preserve",
+            "skipFiles": ["<node_internals>/**"],
+            "runtimeExecutable": "node",
+            "console": "integratedTerminal",
+            "args": ["--preserve-symlinks", "--preserve-symlinks-main", "real.js"],
+            "outFiles": ["${workspaceFolder}/**/*.js"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Preserve & Relative",
+            "skipFiles": ["<node_internals>/**"],
+            "runtimeExecutable": "node",
+            "console": "integratedTerminal",
+            "args": ["--preserve-symlinks", "--preserve-symlinks-main", "real.js"],
+            "outFiles": ["${workspaceFolder}/**/*.js", "${workspaceFolder}/../**/*.js"]
+        }
+    ]
+}
