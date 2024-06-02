@@ -40,7 +40,7 @@ The breakpoint will be triggered normally<br />
 Oddly enough, breakpoints in a softlinked typescript file will only trigger, if any breakpoint exists in the javascript file.<br />
 If the typescript breakpoint is triggered before any javascript breakpoint, it will be triggered inside the javascript source.<br />
 All typescript breakpoints after a javascript breakpoints will be triggered inside the typescript source correctly.<br />
-If no javascript breakpoint exists, all typescript breakpoints are ignore completely.<br />
+If no javascript breakpoint exists, all typescript breakpoints are ignored completely.<br />
 
 ### Testing setup
 
